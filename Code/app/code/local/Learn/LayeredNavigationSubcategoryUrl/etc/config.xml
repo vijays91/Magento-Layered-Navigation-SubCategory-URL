@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * @category    Learn
+ * @package     Learn_LayeredNavigationSubcategoryUrl
+ * @author      Vijayakumar
+ */
+-->
+<config>
+    <modules>
+        <Learn_LayeredNavigationSubcategoryUrl>
+            <version>1.0.0</version>
+        </Learn_LayeredNavigationSubcategoryUrl>
+    </modules>
+    <global>
+        <models>
+            <layerednavigationsubcategoryurl>
+                <class>Learn_LayeredNavigationSubcategoryUrl_Model</class>
+            </layerednavigationsubcategoryurl>
+            <catalog>
+                <rewrite>
+                    <layer_filter_item>Learn_LayeredNavigationSubcategoryUrl_Model_Layer_Filter_Item</layer_filter_item>
+                </rewrite>
+            </catalog>
+        </models>
+        <helpers>
+            <layerednavigationsubcategoryurl>
+                <class>Learn_LayeredNavigationSubcategoryUrl_Helper</class>
+            </layerednavigationsubcategoryurl>
+        </helpers>
+    </global>
+	<adminhtml>
+        <acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <layerednavigationsubcategoryurl translate="title" module="layerednavigationsubcategoryurl">
+                                            <title>Layered Navigation Sub-Category URL Settings</title>
+                                            <sort_order>50</sort_order>
+                                        </layerednavigationsubcategoryurl>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+	<default>
+		<layerednavigationsubcategoryurl>
+			<settings>
+				<active>1</active>
+			</settings>
+		</layerednavigationsubcategoryurl>
+	</default>
+</config>

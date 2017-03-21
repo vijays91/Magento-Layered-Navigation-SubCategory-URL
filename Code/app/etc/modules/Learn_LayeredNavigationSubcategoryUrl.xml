@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * @category    Learn
+ * @package     Learn_LayeredNavigationSubcategoryUrl
+ * @author      Vijayakumar
+ */
+-->
+<config>
+    <modules>
+        <Learn_LayeredNavigationSubcategoryUrl>
+            <active>true</active>
+            <codePool>local</codePool>
+            <version>1.0.0</version>
+            <depends>
+                <Mage_Catalog/>
+            </depends>
+        </Learn_LayeredNavigationSubcategoryUrl>
+    </modules>
+</config>
