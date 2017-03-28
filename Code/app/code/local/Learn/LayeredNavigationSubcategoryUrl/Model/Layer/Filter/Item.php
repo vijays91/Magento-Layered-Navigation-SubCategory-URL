@@ -14,7 +14,7 @@ class Learn_LayeredNavigationSubcategoryUrl_Model_Layer_Filter_Item extends Mage
      */
     public function getUrl()
     {
-		$_helper = Mage::helper('layerednavigationsubcategoryurl');
+	$_helper = Mage::helper('layerednavigationsubcategoryurl');
         if($this->getFilter()->getRequestVar() == "cat" && $_helper->ln_subcategory_url_enable()){
             $category_url = Mage::getModel('catalog/category')->load($this->getValue())->getUrl();
             $return = $category_url;
